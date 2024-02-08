@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Benedict</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Animated Character with Buttons</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<div id="preloader">
+  Loading...
+</div>
+<div id="score">Points: 0</div>
+
+<div id="healthBarContainer">
+  <div id="healthBar"></div>
+  <div id="healthValue"></div>
+</div>
+<div id="blueBarContainer">
+  <div id="blueBar"></div>
+</div>
+  <img id="character" src="https://raw.githubusercontent.com/Ben00000000/Mjnewidle/main/default.png">
+  <button id="attackButton"></button>
+  <button id="moveLeftButton"></button>
+  <button id="moveRightButton"></button>
+  <button id="ultimateButton" style="display: none;">Ultimate</button>
+
+<div id="gameOverScreen">
+  <div id="gameOverMessage">Game Over</div>
+  <p id="finalScore"></p>
+  <button id="restartButton">Restart</button>
+</div>
+
+<audio id="bgAudio" loop>
+  <source src="bg.mp3" type="audio/mpeg">
+</audio>
+
+
+<audio id="explodeAudio">
+  <source src="explode.wav" type="audio/wav">
+</audio>
+
+<audio id="overAudio">
+  <source src="over.wav" type="audio/wav">
+</audio>
+
+<audio id="punchAudio">
+  <source src="punch.wav" type="audio/wav">
+</audio>
+
+<audio id="ultiAudio">
+  <source src="ulti.wav" type="audio/wav">
+</audio>
+
+<script src="script.js"></script>
+</body>
+
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

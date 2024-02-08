@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Menu Title</title>
+  <style>
+    @font-face {
+    font-family: 'PublicPixel'; /* Name your custom font */
+    src: url('publicpixel.ttf') format('truetype'); /* Specify the font file and format */
+    font-weight: normal;
+    font-style: normal;
+}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+          touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+      overflow: hidden;
+        user-select: none;
+    }
+
+    .menu-container {
+        text-align: center;
+        padding: 20px;
+        background: url('bgg.gif') center/cover no-repeat fixed;
+        color: #fff;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 50%;
+        height: 30%;
+    }
+
+button {
+    font-size: 10px;
+    font-family: 'PublicPixel', sans-serif;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+#start-btn {
+    color: white;
+    border: none;
+    background: url('playbtt.png') no-repeat center center;
+    background-size: cover;
+
+}
+#start-btn:active {
+    background-image: url('playbttactive.png');
+
+}
+
+#info-btn {
+    color: white;
+    border: none;
+    background: url('infobtt.png') no-repeat center center;
+    background-size: cover;
+}
+
+#info-btn:active {
+    background-image: url('infobttactive.png');
+
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="menu-container">
+  <img src="nav.png" alt="Your Menu Title">
+  <button id="start-btn"></button>
+  <button id="info-btn"></button>
+</div>
+
+<script>
+        function handleClick(element, destination) {
+            setTimeout(function() {
+                window.location.href = destination;
+            }, 200); // Adjust the delay as needed
+        }
+
+        document.getElementById('start-btn').addEventListener('click', function() {
+            handleClick(this, 'index.html');
+        });
+
+        document.getElementById('info-btn').addEventListener('click', function() {
+            handleClick(this, 'info.html');
+        });
+    </script>
+
+</body>
+</html>
